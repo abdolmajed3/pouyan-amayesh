@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="calc"> natije </p>
+    1 :<input type="text" name="a" id="a">
+    <br />
+    2 :<input type="text" name="b" id="b">
+    <br />
+    3 :<input type="text" name="c" id="c">
+    <br />
+    4 :<input type="text" name="d" id="d">
+    <br />
+    5 :<input type="text" name="e" id="e">
+    <br />
+    6 :<input type="text" name="f" id="f">
+    <br />
+    7 :<input type="text" name="g" id="g">
+    <br />
+    8 :<input type="text" name="h" id="h">
+    <br />
+    9 :<input type="text" name="i" id="i">
+    <input type="button" value="jam" onclick="jam()">
+    <script>
+        let calc = document.getElementById('calc')
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let c = document.getElementById('c').value;
+        let d = document.getElementById('d').value;
+        let e = document.getElementById('e').value;
+        let f = document.getElementById('f').value;
+        let g = document.getElementById('g').value;
+        let h = document.getElementById('h').value;
+        let i = document.getElementById('i').value;
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+        d = parseInt(d);
+        e = parseInt(e);
+        f = parseInt(f);
+        g = parseInt(g);
+        h = parseInt(h);
+        i = parseInt(i);
+        console.log(a);
+        function jam() {
+            natije = a + b + c + d + e + f + g + h + i;
+            calc.innerHTML = natije;
+        }
+
+    </script>
+</body>
+
+</html>
